@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { DictionaryEntry, Fonts, Phonetic } from "../interfaces/dictionaryInterfaces";
+import type { DictionaryEntry, Fonts } from "../interfaces/dictionaryInterfaces";
 // import type { DictionaryEntry } from "../interfaces/dictionaryInterfaces";
 
 type DictionaryState = {
