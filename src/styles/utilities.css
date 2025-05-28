@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+:root {
+
+/************ Colors ***********/
+    --black-01: #050505;
+    --black-02: #1f1f1f;
+    --black-03: #2d2d2d;
+    --black-04: #3a3a3a;
+
+    --grey-01: #757575;
+    --grey-02: #e9e9e9;
+    --grey-03: #f4f4f4;
+
+    --white: #ffffff;
+
+    --purple-primary: rgb(164, 69, 237);
+    --red-primary: #ff5252;
+
+
+/*********** Typography ***********/
+
+    /* Inter */
+
+    .heading-l-inter { 
+        /* font-family: "Inter", sans-serif; */
+        /* font-size: 64px;  */
+        /* color: var(--black-03); */
+        font-weight: 700;
+    }
+
+    .heading-m-inter { 
+        /* font-family: "Inter", sans-serif; */
+        font-size: 24px; 
+        /* color: var(--black-03); */
+        font-weight: 400;
+    }
+
+    .heading-s-inter {
+        /* font-family: "Inter", sans-serif; */
+        font-size: 20px; 
+        color: var(--black-03);
+    }
+
+    
+    .body-m-inter {
+        /* font-family: "Inter", sans-serif; */
+        font-size: 18px; 
+        /* color: var(--black-03); */
+        font-weight: 900;
+        font-style: italic;
+    }
+
+    .body-s-inter {
+        /* font-family: "Inter", sans-serif; */
+        font-size: 14px; 
+        /* color: var(--black-03); */
+    }
+
+
+    /* Lora */
+
+    .heading-l-lora { 
+        /* font-family: "Lora", sans-serif; */
+        font-size: 64px; 
+        /* color: var(--black-03); */
+        font-weight: 700;
+    }
+
+    .heading-m-lora { 
+        /* font-family: "Lora", sans-serif; */
+        font-size: 24px; 
+        /* color: var(--black-03); */
+        font-weight: 400;
+    }
+
+    .heading-s-lora {
+        /* font-family: "Lora", sans-serif; */
+        font-size: 20px; 
+        color: var(--black-03);
+    }
+
+    
+    .body-m-lora {
+        /* font-family: "Lora", sans-serif; */
+        font-size: 18px; 
+        /* color: var(--black-03); */
+    }
+
+    .body-s-lora {
+        /* font-family: "Lora", sans-serif; */
+        font-size: 14px; 
+        /* color: var(--black-03); */
+    }
+
+
+    /* Incosolata */
+
+    .heading-l-incosolata { 
+        /* font-family: "Incosolata", sans-serif; */
+        font-size: 64px; 
+        /* color: var(--black-03); */
+        font-weight: 700;
+    }
+
+    .heading-m-incosolata { 
+        /* font-family: "Incosolata", sans-serif; */
+        font-size: 24px; 
+        /* color: var(--black-03); */
+        font-weight: 400;
+    }
+
+    .heading-s-incosolata {
+        /* font-family: "Incosolata", sans-serif; */
+        font-size: 20px; 
+        color: var(--black-03);
+    }
+
+    
+    .body-m-incosolata {
+        /* font-family: "Incosolata", sans-serif; */
+        font-size: 18px; 
+        /* color: var(--black-03); */
+    }
+
+    .body-s-incosolata {
+        /* font-family: "Incosolata", sans-serif; */
+        font-size: 14px; 
+        /* color: var(--black-03); */
+    }
+
+
+
+
+
+/************** components *************/
+
+    .search-bar:focus {
+        border: 1px solid var(--purple-primary);
+    }
+
+
+    .error-box {
+        width: fit-content;
+        padding: .5rem 2rem;
+        background: rgba(151, 0, 0, .9);
+        border-radius: 1rem;
+        color: white;
+        font-weight: 600;
+        position: absolute;
+        z-index: 20;
+        y: -70;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid white;
+    }
+
+
+    .play-btn:hover {
+        scale: 1.1;
+        transition: .3s ease;
+    }
+
+    .play-btn:active {
+        scale: 0.95;
+        transition: .3s ease;
+    }
+
+
+    .serif {
+        font-family: "Lora", serif;
+    }
+
+    .sans-serif {
+        font-family: "Inter", sans-serif;
+    }
+
+    .mono {
+        font-family: "Inconsolata", monospace;
+    }
+
+
+
+    .light {
+        background: var(--white);
+        color: (--black-01);
+        transition: .3s ease;
+    }
+
+    .dark {
+        background: var(--black-01);
+        color: var(--white);
+        transition: .3s ease;
+    }
+
+    .input-dark {
+        background: var(--black-02);
+        height: 48px;
+        width: 100%;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        outline: none;
+        border: 1px solid transparent;
+    }
+
+    .input-light {
+        background: var(--grey-03);
+        height: 48px;
+        width: 100%;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        outline: none;
+        border: 1px solid transparent;
+    }
+
+    .select-dark {
+        background: var(--black-01);
+        color: var(--white);
+        transition: .3s ease;
+    }
+
+    .select-light {
+        background: var(--white);
+        color: var(--black-01);
+        transition: .3s ease;
+    }
+
+    .select-drop-down {
+        outline: none;
+        border: none;
+    }
+
+    .theme-circle-light {
+        width: 15px;
+        height: 15px;
+        background: var(--white);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 3px;
+        border-radius: 50%;
+        transition: .3s ease;
+    }
+
+    .theme-circle-dark {
+        width: 15px;
+        height: 15px;
+        background: var(--white);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 3px;
+        border-radius: 50%;
+        transition: .3s ease;
+    }
+
+    .toggleTheme {
+        width: 40px;
+        height: 20px;
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .toggle-theme-light {
+        background: var(--grey-01);
+    }
+
+    .toggle-theme-dark {
+        background: var(--purple-primary);
+    }
+
+    .moon-icon-light {
+        color: var(--grey-01);
+    }
+
+    .moon-icon-dark {
+        color: var(--purple-primary)
+    }
+
+
+
+
+}
