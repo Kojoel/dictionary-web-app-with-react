@@ -6,12 +6,10 @@ type DictionaryState = {
     searchQuery: string;
     wordData: DictionaryEntry;
     wordError: string;
-    phoneticAudio: string;
 
     setSearch: (word: string) => void;
     setGetSearchData: (data: DictionaryEntry) => void;
     setGetWordError: (error: string) => void;
-    setPhoneticsAudio: ( audioUrl: string ) => void; 
 }
 
 type FontState = {
@@ -33,7 +31,6 @@ export const useDictionaryStore = create<DictionaryState>((set) => ({
     sourceUrls: [],
   },
   wordError: '',
-  phoneticAudio: '',
 
   setSearch: (word: string) => {
     set({ searchQuery: word });
@@ -44,9 +41,6 @@ export const useDictionaryStore = create<DictionaryState>((set) => ({
   setGetWordError: (error: string) => {
     set({ wordError: error })
   },
-  setPhoneticsAudio: (audioUrl: string) => {
-    set({ phoneticAudio: audioUrl })
-  }
 }));
 
 
