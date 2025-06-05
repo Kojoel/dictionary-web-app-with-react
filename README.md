@@ -12,7 +12,7 @@ A React-based web application that allows users to search for word definitions, 
 
 ## Demo
 
-*(Add a link here if you have a live demo URL)*
+👉 [View the live demo](https://github.com/Kojoel/dictionary-web-app-with-react)
 
 ## Installation
 
@@ -27,5 +27,5 @@ A React-based web application that allows users to search for word definitions, 
 3. Install dependencies:
   npm install
 
-4. State the development server:
+4. Run the development server:
   npm run dev
