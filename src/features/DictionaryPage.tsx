@@ -13,7 +13,7 @@ const DictionaryPage = () => {
     const toggleTheme = useThemeStore((state) => state.toggleTheme);
 
     return (
-        <div className={`h-full flex flex-col w-[736.99px] ${font}`}>
+        <div className={`h-screen flex flex-col w-[736.99px] ${font}`}>
             <div className="flex justify-between items-center h-[32px] mt-3 mb-3 md:mt-5 md:mb-5">
                 <i className="fas fa-book text-[var(--purple-primary)] text-2xl"></i>
 
