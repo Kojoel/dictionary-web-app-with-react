@@ -8,7 +8,7 @@ function App() {
   const theme = useThemeStore((state) => state.theme);
 
   return (
-    <div className={`pr-4 pl-4 md:pr-20 md:pl-20 flex justify-center ${theme}`}>
+    <div className={`overflow-hidden pr-4 pl-4 md:pr-20 md:pl-20 flex justify-center h-screen ${theme}`}>
       <DictionaryPage />
     </div>
   )

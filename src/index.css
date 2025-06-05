@@ -3,10 +3,3 @@
 @tailwind utilities;
 
 
-input::-ms-clear {
-  display: none;
-}
-
-input::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-} 
